@@ -12,7 +12,7 @@ The project was initially inspired by the National Geographic documentaries _A D
 
 Two additional sources shaped the project’s method. Tim Ingold’s account of the line as a trace of movement (2007) suggested that the route itself, drawn directly, could become the primary record. Craig Reynolds’s distributed model of flocking (1987) supplied the computational principle: coherent global patterns can emerge from local interactions, the defining operation of agent-based modelling.
 
-The series became the basis for a successive experiments,_ Spacing Prediction_, which replaces fixed behavioural rules with multi-agent reinforcement learning and introduces anticipatory systems — in Robert Rosen's sense of a system that acts on an internal predictive model of future state (Rosen, 1985) — to ecological modelling and cartographic drawing.
+The series became the basis for a successive experiments,_Spacing Prediction_ (2024-2025), which replaces fixed behavioural rules with multi-agent reinforcement learning and introduces anticipatory systems — in Robert Rosen's sense of a system that acts on an internal predictive model of future state (Rosen, 1985) — to ecological modelling and cartographic drawing.
 
 Both belong to a longer programme: building small, legible simulated worlds — toy-worlds — as instruments for studying/training spatial intelligence. Each world fixes a few mechanisms, exposes them as parameters, and renders their spatial consequences directly, so that questions about memory, anticipation, and movement can be examined through construction.
 
