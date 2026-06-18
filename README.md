@@ -1,11 +1,8 @@
-# Cursus
+# Cursus 
+
+## Introduction
 
 An interface to a series of agent-based cartographic experiments in animal movement, 2021–2023. Asad Khan.
-
-[![License: MIT][image-1]][1]
-![Reproducible][image-2]
-
-![A Cursus plate: occupancy contours and weighted movement lines over a kilometre graticule, with title cartouche and scale bar][image-3]
 
 Cursus is an interface for a series of research experiments conducted between 2021 and 2023, each using agent-based simulation to investigate animal movement. The research is guided by a broader question: How does movement become memory, and how does memory shape the paths through which living beings inhabit the world?
 
@@ -14,7 +11,6 @@ This repository contains both the interface and the computational model that dri
 The project was initially inspired by the National Geographic documentaries A Deer Migration You Have to See to Believe (2014) and Incredible Animal Journeys (2023), together with the 2018 National Geographic feature Sheep Teach Each Other How to Migrate Long Distances. These works introduced migration as a form of socially learned and collectively maintained knowledge. This idea was further grounded in research by Brett Jesmer and colleagues (2018), which showed that large-mammal migration routes are not simply fixed at birth: they can be learned, socially transmitted, and gradually reconstructed by translocated populations over several generations.
 
 Two additional sources shaped the project’s method. Tim Ingold’s account of the line as a trace of movement (2007) suggested that the route itself, drawn directly, could become the primary record. Craig Reynolds’s distributed model of flocking (1987) supplied the computational principle: coherent global patterns can emerge from local interactions, the defining operation of agent-based modelling.
-
 
 ## The Movement Model
 
@@ -45,7 +41,6 @@ The drawing makes the route itself the document. Treating the line as the primar
 Around the lines the plate carries conventional cartographic furniture: a kilometre graticule, a scale bar, a compass rose, and a title cartouche. A four-role typographic system orders the labelling — a tracked small-caps title, an uppercase section label, oldstyle tabular figures for numeric values, and italic annotation for natural features.
 
 A second, quantitative layer reads the same tracks. Cursus estimates a kernel density surface of occupancy and extracts isopleth contours from it by marching squares (Lorensen & Cline, 1987), producing utilisation-distribution bands of the kind Brian Worton introduced for delimiting home range (Worton, 1989). The drawing and the measurement derive from one dataset.
-
 
 ## A Wider Trajectory
 
@@ -106,10 +101,6 @@ Worton, B. J. (1989). Kernel methods for estimating the utilization distribution
 ## Licence
 
 Cursus is released under the MIT Licence — see [`LICENSE`][2]. © 2021–2023 Asad Khan.
-
-[1]:	LICENSE
-[2]:	LICENSE
-
 [image-1]:	https://img.shields.io/badge/license-MIT-blue?style=flat-square
 [image-2]:	https://img.shields.io/badge/runs-seeded%20%2F%20reproducible-success?style=flat-square
 [image-3]:	assets/hero.png
