@@ -100,7 +100,4 @@ Worton, B. J. (1989). Kernel methods for estimating the utilization distribution
 
 ## Licence
 
-Cursus is released under the MIT Licence — see [`LICENSE`][2]. © 2021–2023 Asad Khan.
-[image-1]:	https://img.shields.io/badge/license-MIT-blue?style=flat-square
-[image-2]:	https://img.shields.io/badge/runs-seeded%20%2F%20reproducible-success?style=flat-square
-[image-3]:	assets/hero.png
+Cursus is released under the MIT Licence. © 2021–2023 Asad Khan.
