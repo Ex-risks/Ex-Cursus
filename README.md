@@ -1,10 +1,13 @@
 # Ex-Cursus 
 
-Ex-Cursus, from its Latin *cursus*, a course, a running, the track a thing takes — is an interface to a series of agent-based, simulation experiments that investigates more-than-human ecologies of movement using cartographic drawing. Large-mammal migration routes are not fixed at birth. Animals learn routes, transmit them socially, and reconstruct them across unfamiliar terrain over successive generations. A route can become an inheritance. When does inherited habit become place?
+Ex-Cursus takes its name from the Latin cursus: a course, a running, the track a thing takes. I developed the project between 2021 and 2022 as an interface to a series of agent-based simulations, using cartographic drawing to investigate more-than-human ecologies of movement.
 
-The simulations take the wolf pack as their moving unit. Wolves are useful here because their paths arise neither from individual intention nor from migration alone, but from relations: cohesion within the pack, pursuit of prey, avoidance of rival scent, territorial memory, and seasonal change. Their movement is social, ecological, and cumulative. Each agent follows a small set of local rules: maintain its heading, remain with the pack, move toward prey, withdraw from rival scent, follow the bearing of the season. 
+The work began with migration. In several large-mammal species, routes are not wholly innate. Route knowledge can be learned socially, carried across generations, and rebuilt when a population enters unfamiliar terrain. A path, in this sense, can be inherited. I wanted to know when repeated movement becomes memory—and when memory becomes infrastructure. 
 
-No rule draws a route. Each step becomes a short line. As packs return across successive seasons, those lines accumulate and thicken into corridors. The resulting map is the movement’s residue.
+This led me to the wolf pack: a social body whose movement exceeds any one animal. Its paths emerge through relations among pack members, prey, territory, rival scent, memory, and season.
+The simulation is not a validated ecological model of wolf behaviour but is a speculative approximation informed through David Mech and Luigi Boitani accounts of wolf social organisation, predation, territorial scent-marking, and seasonal movement. Its broader premise draws on Aldo Leopold’s account of the wolf as inseparable from the ecological system it inhabits.
+
+Each agent in the simulation follows five local rules: hold course, remain with the pack, pursue prey, avoid rival scent, and follow the season’s bearing. At every step, its displacement becomes a short line. No agent sees the whole route. No rule contains the final map. Across successive seasons, repeated passages gather and thicken into corridors. The map is not laid over movement. It is movement, accumulated.ment, accumulated.
 
 
 ## The Movement Model
