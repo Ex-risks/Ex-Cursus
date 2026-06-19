@@ -35,9 +35,9 @@ I should be plain about the limit. This is not a validated model of wolves, and 
 
 The arithmetic is also plain, gradients by central differences on the grid, time stepped forward by simple Euler — enough to move animals convincingly and to make a clean drawing, and not a claim on the third decimal. The track buffer holds 100,000 segments; past that the oldest are dropped and counted (droppedPathSegments), so a very long run draws only what it still remembers. And there is no test suite here yet.
 
-## Running Cursus
+## Running Ex-Cursus
 
-Cursus runs in the browser without a build step. Open `index.html` with its `js/` modules alongside — `rng`, `config`, `environment`, `memory`, `metrics`, `experiments`, and `simulation`. The interface divides into a drawing surface and a parameter sidebar; the five most-used parameters carry sparklines that show their recent history.
+Ex-Cursus runs in the browser without a build step. Open `index.html` with its `js/` modules alongside — `rng`, `config`, `environment`, `memory`, `metrics`, `experiments`, and `simulation`. The interface divides into a drawing surface and a parameter sidebar; the five most-used parameters carry sparklines that show their recent history.
 
 ```bash
 git clone https://github.com/USERNAME/cursus.git
