@@ -1,26 +1,25 @@
 # Ex-Cursus 
 
-Ex-Cursus takes its name from the Latin cursus: a course, a running, the track a thing takes. I developed the project between 2021 and 2022 as an interface to a series of agent-based simulations, using cartographic drawing to investigate more-than-human ecologies of movement.
+Ex-Cursus from the latinate _cursus_: a course, a running, the track a thing takes – is an interface to a series of agent-based simulations I developed between 2021-2022, to investigate more-than-human ecologies of movement using cartographic drawing.
 
-The work began with migration. In several large-mammal species, routes are not wholly innate. Route knowledge can be learned socially, carried across generations, and rebuilt when a population enters unfamiliar terrain. A path, in this sense, can be inherited. I wanted to know when repeated movement becomes memory—and when memory becomes infrastructure. 
+The work began with understanding climate-induced migration. In several large-mammal species, routes are not wholly innate. Route knowledge can be learned socially, carried often across generations, and rebuilt when a population enters unfamiliar terrain. A path, in this sense, can be inherited. I wanted to know when repeated movement becomes memory—and when memory becomes infrastructure. 
 
-This led me to the wolf pack: a social body whose movement exceeds any one animal. Its paths emerge through relations among pack members, prey, territory, rival scent, memory, and season.
-The simulation is not a validated ecological model of wolf behaviour but is a speculative approximation informed through David Mech and Luigi Boitani accounts of wolf social organisation, predation, territorial scent-marking, and seasonal movement. Its broader premise draws on Aldo Leopold’s account of the wolf as inseparable from the ecological system it inhabits.
+This led me to the wolf pack: a social body whose movement exceeds any one animal. Its paths emerge from six interacting conditions: pack cohesion, prey distribution, territorial marking, rival scent, spatial memory, and seasonal movement understood with David Mech and Luigi Boitani accounts of wolf ecology. Its broader premise draws on Aldo Leopold’s account of the wolf as inseparable from the ecological system it inhabits.
 
-Each agent in the simulation follows five local rules: hold course, remain with the pack, pursue prey, avoid rival scent, and follow the season’s bearing. At every step, its displacement becomes a short line. No agent sees the whole route. No rule contains the final map. Across successive seasons, repeated passages gather and thicken into corridors. The map is not laid over movement. It is movement, accumulated.ment, accumulated.
+The simulation that I have built, is not a validated ecological model of wolf behaviour but is a speculative approximation of existing studies. Each agent in the simulation follows five local rules: hold course, remain with the existing pack or disperse, pursue prey, avoid rival scent, and follow the season’s bearing. At every step, its displacement becomes a short line. No agent sees the whole route. No rule contains the final map. Across successive seasons, repeated passages gather and thicken into cartographic corridors.
 
 
 ## The Movement Model
 
 A wolf moves as a correlated random walk, which is to say it mostly keeps going the way it was already going. On top of that it steers by several pulls at once — toward its packmates and away from the nearest of them, along the bearing of the current season, up the local gradient of prey, downhill across the cost of the ground — and the sum becomes a bounded turn, capped so the animal cannot spin in place. 
 
-Then a small random kick is added, drawn from a wrapped Cauchy distribution (concentration ρ = 0.85) rather than a Gaussian, because the heavier tails throw the occasional hard turn, and a hard turn now and then is what an animal does. Energy falls with every step and is restored by a kill, whose odds rise with the prey underfoot. At zero, the wolf dies.
+Then a small random kick is added, drawn from a wrapped Cauchy Distribution (concentration ρ = 0.85) rather than a Gaussian Distribution, because the heavier tails throw the occasional hard turn, and a hard turn now and then is what an animal does. This is a stylised movement kernel, not a parameter fitted to wolf-tracking data. Energy falls with every step and is restored by a kill, whose odds rise with the prey underfoot. At zero, the wolf dies.
 
-Memory is what makes the corridors last. Each wolf remembers where it has been, tagged by season, and when it needs a heading it finds the nearest length of its own track from that same season and follows it. A year of loose wandering is tightened, the next year, into a route worn by reuse. 
+Memory is what makes the corridors last. Each wolf remembers where it has been, tagged with season, and when it needs a heading it finds the nearest length of its own track from that same season and follows it. A year of loose wandering is tightened, the next year, into a route worn by reuse. 
 
 Underneath the agents, are four sparse grids on a 20-unit cell: prey, which regrows logistically and is drawn down at each kill; scent, laid down per pack and avoided by the others, which sorts the packs into territories without any territory being drawn; an optional cost-of-transport surface that can be read from a greyscale image, dark for cheap ground; and an optional trail layer in which use lowers cost and lower cost invites use — stigmergy, the logic of the ant path. 
 
-Packs breed once a year at the den, split when they grow past ten, and send their grown wolves out to disperse and found packs of their own in empty ground
+Packs breed once a year at the den, split when they grow past ten, and send their grown wolves out to disperse and found packs of their own in empty ground. No route passes intact from one generation to the next. What persists is a field of tendencies: remembered tracks, altered costs, recurring seasons, pack continuity. Each generation enters ground already changed through movement.
 
 ## The Cartographic Record
 
@@ -28,17 +27,17 @@ The drawing separates ephemeral tracks from established routes. Line weight, val
 
 The drawing makes the route itself the document. Treating the line as the primary record places the work within Tim Ingold's account of the map as a trace of paths actually travelled (Ingold, 2007), with reuse and establishment shown directly in the weight of the line rather than annotated beside it.
 
-Around the lines the plate carries conventional cartographic furniture. A second, quantitative layer reads the same tracks. Cursus estimates a kernel density surface of occupancy and extracts isopleth contours from it by marching squares (Lorensen & Cline, 1987), producing utilisation-distribution bands for delimiting home range. The drawing and the measurement derive from one dataset.
+Around the lines the plate carries conventional cartographic furniture. A second, quantitative layer reads the same tracks. Ex-cursus estimates a kernel density surface of occupancy and extracts isopleth contours from it by marching squares (Lorensen & Cline, 1987), producing utilisation-distribution bands for delimiting home range. The drawing and the measurement derive from a single dataset.
 
 ## Current Limits
 
 I should be plain about the limit. This is not a validated model of wolves, and I am not an ecologist. The bearings, the weights of the forces, the constants of energy and hunting are a bit speculative — tuned until the structure that emerges looks right, not fitted to field data. So, please read the output as something made, not as a prediction. The scale is nominal: a unit is a model-pixel, and a kilometre is whatever kmPerPixel says it is. 
 
-The arithmetic is also plain, gradients by central differences on the grid, time stepped forward by simple Euler — enough to move animals convincingly and to make a clean drawing, and not a claim on the third decimal. The track buffer holds 100,000 segments; past that the oldest are dropped and counted (droppedPathSegments), so a very long run draws only what it still remembers. And there is no test suite here yet.
+The arithmetic is also plain, gradients by central differences on the grid, time stepped forward by simple Euler — enough to move animals convincingly and to make a clean drawing, and not a claim on the third decimal. The track buffer holds 100,000 segments; past that the oldest are dropped and counted, so a very long run draws only what it still remembers. And there is no test suite here yet.
 
 ## Running Ex-Cursus
 
-Ex-Cursus runs in the browser without a build step. Open `index.html` with its `js/` modules alongside — `rng`, `config`, `environment`, `memory`, `metrics`, `experiments`, and `simulation`. The interface divides into a drawing surface and a parameter sidebar; the five most-used parameters carry sparklines that show their recent history.
+The programme should run in the browser without a build step. Open `index.html` with its `js/` modules alongside — `rng`, `config`, `environment`, `memory`, `metrics`, `experiments`, and `simulation`. The interface divides into a drawing surface and a parameter sidebar; the five most-used parameters carry sparklines that show their recent history.
 
 ```bash
 git clone https://github.com/USERNAME/cursus.git
