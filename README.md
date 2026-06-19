@@ -1,10 +1,10 @@
 # Ex-Cursus 
 
-Ex-Cursus from the latinate _cursus_: a course, a running, the track a thing takes – is an interface to a series of agent-based simulations I developed between 2021-2022, to investigate more-than-human ecologies of movement using cartographic drawing.
+Ex-Cursus from the latinate _cursus_: a course, a running, the track a thing takes – is an interface to a series of agent-based simulations I developed between 2022-2023, to investigate more-than-human ecologies of movement using cartographic drawing.
 
 The work began with understanding climate-induced migration. In several large-mammal species, routes are not wholly innate. Route knowledge can be learned socially, carried often across generations, and rebuilt when a population enters unfamiliar terrain. A path, in this sense, can be inherited. I wanted to know when repeated movement becomes memory—and when memory becomes infrastructure. 
 
-This led me to the wolf pack: a social body whose movement exceeds any one animal. Its paths emerge from six interacting conditions: pack cohesion, prey distribution, territorial marking, rival scent, spatial memory, and seasonal movement understood with David Mech and Luigi Boitani accounts of wolf ecology. Its broader premise draws on Aldo Leopold’s account of the wolf as inseparable from the ecological system it inhabits.
+This led me to the wolf pack: a social body whose movement exceeds any one animal. Its paths emerge from six interacting conditions: pack cohesion, prey distribution, territorial marking, rival scent, spatial memory, and seasonal movement understood with David Mech and Luigi Boitani accounts of wolf ecology (Mech and Boitani 2003). Its broader premise draws on Aldo Leopold’s account of the wolf as inseparable from the ecological system it inhabits (Leopold, 1949).
 
 The simulation that I have built, is not a validated ecological model of wolf behaviour but is a speculative approximation of existing studies. Each agent in the simulation follows five local rules: hold course, remain with the existing pack or disperse, pursue prey, avoid rival scent, and follow the season’s bearing. At every step, its displacement becomes a short line. No agent sees the whole route. No rule contains the final map. Across successive seasons, repeated passages gather and thicken into cartographic corridors.
 
@@ -49,6 +49,12 @@ Exports serve research and exhibition together. Vector SVG writes the full plate
 
 ## References
 
+The references below mark the ecological, computational, and cartographic work from which Ex-Cursus was developed.
+
+L. David Mech and Luigi Boitani, eds., Wolves: Behavior, Ecology, and Conservation (Chicago: University of Chicago Press, 2003).
+
+Aldo Leopold, “Thinking Like a Mountain,” in A Sand County Almanac, and Sketches Here and There (New York: Oxford University Press, 1949).
+
 Bertin, J. (1983). *Semiology of Graphics: Diagrams, Networks, Maps* (W. J. Berg, Trans.). University of Wisconsin Press. (Original work published 1967.)
 
 Couzin, I. D., Krause, J., James, R., Ruxton, G. D., & Franks, N. R. (2002). Collective memory and spatial sorting in animal groups. *Journal of Theoretical Biology*, 218(1), 1–11.
@@ -63,7 +69,7 @@ Helbing, D., Keltsch, J., & Molnár, P. (1997). Modelling the evolution of human
 
 Ingold, T. (2007). *Lines: A Brief History*. Routledge.
 
-Jesmer, B. R., Merkle, J. A., Goheen, J. R., Aikens, E. O., Beck, J. L., Courtemanch, A. B., … Kauffman, M. J. (2018). Is ungulate migration culturally transmitted? Evidence of social learning from translocated animals. *Science*, 361(6406), 1023–1025.
+Jesmer, B. R.etal. (2018). Is ungulate migration culturally transmitted? Evidence of social learning from translocated animals. *Science*, 361(6406), 1023–1025.
 
 Lorensen, W. E., & Cline, H. E. (1987). Marching cubes: a high resolution 3D surface construction algorithm. *ACM SIGGRAPH Computer Graphics*, 21(4), 163–169.
 
