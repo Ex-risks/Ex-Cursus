@@ -2,7 +2,7 @@
 
 Ex-Cursus from the latinate _cursus_: a course, a running, the track a thing takes – is an interface to a series of agent-based simulations I developed between 2022-2023, to investigate more-than-human ecologies of movement using cartographic drawing.
 
-The work began with understanding climate-induced migration. In several large-mammal species, routes are not wholly innate. Route knowledge can be learned socially, carried often across generations, and rebuilt when a population enters unfamiliar terrain. A path, in this sense, can be inherited. I wanted to know when repeated movement becomes memory—and when memory becomes infrastructure. 
+The work began with understanding climate-induced migration. In several large-mammal species, routes are not wholly innate. Route knowledge can be learned socially, carried often across generations, and rebuilt when a population enters unfamiliar terrain. A path, in this sense, can be inherited. I wanted to know when repeated movement becomes memory—and when memory becomes infrastructure.
 
 This led me to the wolf pack: a social body whose movement exceeds any one animal. Its paths emerge from six interacting conditions: pack cohesion, prey distribution, territorial marking, rival scent, spatial memory, and seasonal movement understood with David Mech and Luigi Boitani accounts of wolf ecology (Mech and Boitani 2003). Its broader premise draws on Aldo Leopold’s account of the wolf as inseparable from the ecological system it inhabits (Leopold, 1949).
 
@@ -31,7 +31,7 @@ Around the lines the plate carries conventional cartographic furniture. A second
 
 ## Current Limits
 
-I should be plain about the limit. This is not a validated model of wolves, and I am not an ecologist. The bearings, the weights of the forces, the constants of energy and hunting are a bit speculative — tuned until the structure that emerges looks right, not fitted to field data. So, please read the output as something made, not as a prediction. The scale is nominal: a unit is a model-pixel, and a kilometre is whatever kmPerPixel says it is. 
+I should be plain about the limit. This is not a validated model of wolves, and I am not an ecologist, but an architect that draws with ecologies. So, the bearings, the weights of the forces, the constants of energy and hunting are a bit speculative — tuned until the structure that emerges looks right, not fitted to field data. So, please read the output as something made, not as a prediction. The scale is nominal: a unit is a model-pixel, and a kilometre is whatever kmPerPixel says it is. 
 
 The arithmetic is also plain, gradients by central differences on the grid, time stepped forward by simple Euler — enough to move animals convincingly and to make a clean drawing, and not a claim on the third decimal. The track buffer holds 100,000 segments; past that the oldest are dropped and counted, so a very long run draws only what it still remembers. And there is no test suite here yet.
 
