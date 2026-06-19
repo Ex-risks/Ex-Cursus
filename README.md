@@ -1,7 +1,5 @@
 # Ex-Cursus 
 
-## Introduction
-
 Ex-Cursus, from its Latin *cursus*, a course, a running, the track a thing takes — is an interface to a series of agent-based, simulation experiments that investigates more-than-human ecologies of movement using cartographic drawing. Large-mammal migration routes are not fixed at birth. Animals learn routes, transmit them socially, and reconstruct them across unfamiliar terrain over successive generations. A route can become an inheritance. When does inherited habit become place?
 
 The simulations take the wolf pack as their moving unit. Wolves are useful here because their paths arise neither from individual intention nor from migration alone, but from relations: cohesion within the pack, pursuit of prey, avoidance of rival scent, territorial memory, and seasonal change. Their movement is social, ecological, and cumulative. Each agent follows a small set of local rules: maintain its heading, remain with the pack, move toward prey, withdraw from rival scent, follow the bearing of the season. 
